@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<h1>Happy Birthday Message Creator</h1>
+    <div>
+    <label for="message">Message?</label>
+        <input type="text" id="message" name="message"required>
+    </div>
+<div>
+    <label for="email">Email Address?</label>
+    <input type="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)" id="email"
+           placeholder="name@domain.com" name="email" required>
+</div>
+<div>
+    <label for="date">Date to send?</label>
+    <input type="date" id="date"
+           placeholder="mm / dd / yyyy" name="date" required>
+</div>
+<div>
+    <label for="color">Message color?</label>
+    <input type="color" id="color"
+           placeholder="mm / dd / yyyy" required pattern="[0-9].\d{8}|\d{11}" name="color">
+</div>
+<div>
+    <label for="blinks">Number of blinks?</label>
+    <input type="blinks" id="blinks" min="0" max="10" step="4"
+           placeholder="0" name="blinks" required>
+</div>
+<div> class="volume-slider-container"
+    <label for="volume">Music volume? </label>
+    <input type="range" id="volume" min="1" max="50" value="20" class="volume" id="volume">
+</div>
+</body>
+</html>
